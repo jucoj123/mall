@@ -44,7 +44,7 @@ public class MynotifyViewHandler {
         try {
             if (!ordercanceled.validate()) return;
                 // view 객체 조회
-            Optional<Mynotify> mynotifyOptional = mynotifyRepository.findByOrderid(ordercanceled.getOrderid());
+            Optional<Mynotify> mynotifyOptional = mynotifyRepository.findById(ordercanceled.getOrderid());
 
             if( mynotifyOptional.isPresent()) {
                  Mynotify mynotify = mynotifyOptional.get();
