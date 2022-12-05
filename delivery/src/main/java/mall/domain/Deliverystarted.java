@@ -1,0 +1,25 @@
+package mall.domain;
+
+import mall.domain.*;
+import mall.infra.AbstractEvent;
+import java.util.*;
+import lombok.*;
+
+@Data
+@ToString
+public class Deliverystarted extends AbstractEvent {
+
+    private Long deliveryid;
+    private String storeid;
+    private String address;
+    private String orderid;
+    private String customerid;
+    private String status;
+
+    public Deliverystarted(Delivery aggregate){
+        super(aggregate);
+    }
+    public Deliverystarted(){
+        super();
+    }
+}
