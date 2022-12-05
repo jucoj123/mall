@@ -49,9 +49,6 @@ public class Pay  {
 
     @PostPersist
     public void onPostPersist(){
-    }
-    @PrePersist
-    public void onPrePersist(){
 
 
         Paid paid = new Paid(this);

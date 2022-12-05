@@ -1,7 +1,7 @@
 package mall.domain;
 
-import mall.domain.Ordercanceled;
 import mall.domain.Orderplaced;
+import mall.domain.Ordercanceled;
 import mall.FrontApplication;
 import javax.persistence.*;
 import java.util.List;
@@ -63,19 +63,6 @@ public class Order  {
     @PostPersist
     public void onPostPersist(){
 
-
-        Ordercanceled ordercanceled = new Ordercanceled(this);
-        ordercanceled.publishAfterCommit();
-
-        // Get request from Pay
-        //mall.external.Pay pay =
-        //    Application.applicationContext.getBean(mall.external.PayService.class)
-        //    .getPay(/** mapping value needed */);
-
-    }
-    @PrePersist
-    public void onPrePersist(){
-
         //Following code causes dependency to external APIs
         // it is NOT A GOOD PRACTICE. instead, Event-Policy mapping is recommended.
 
@@ -88,6 +75,16 @@ public class Order  {
 
         Orderplaced orderplaced = new Orderplaced(this);
         orderplaced.publishAfterCommit();
+
+
+
+        Ordercanceled ordercanceled = new Ordercanceled(this);
+        ordercanceled.publishAfterCommit();
+
+        // Get request from Pay
+        //mall.external.Pay pay =
+        //    Application.applicationContext.getBean(mall.external.PayService.class)
+        //    .getPay(/** mapping value needed */);
 
     }
 
