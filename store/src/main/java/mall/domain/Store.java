@@ -90,11 +90,11 @@ public class Store  {
 
     public static void updateStatus(Paid paid){
 
-        /** Example 1:  new item 
+        //Example 1:  new item 
         Store store = new Store();
         repository().save(store);
 
-        */
+        
 
         /** Example 2:  finding and process
         
@@ -111,11 +111,11 @@ public class Store  {
     }
     public static void addToOrderlist(Orderplaced orderplaced){
 
-        /** Example 1:  new item 
+        // Example 1:  new item 
         Store store = new Store();
         repository().save(store);
 
-        */
+        
 
         /** Example 2:  finding and process
         

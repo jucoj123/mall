@@ -69,11 +69,11 @@ public class Pay  {
 
     public static void cancelPay(Rejected rejected){
 
-        /** Example 1:  new item 
+        // Example 1:  new item 
         Pay pay = new Pay();
         repository().save(pay);
 
-        */
+        
 
         /** Example 2:  finding and process
         
@@ -90,11 +90,11 @@ public class Pay  {
     }
     public static void cancelPay(Ordercanceled ordercanceled){
 
-        /** Example 1:  new item 
+        //Example 1:  new item 
         Pay pay = new Pay();
         repository().save(pay);
 
-        */
+        
 
         /** Example 2:  finding and process
         

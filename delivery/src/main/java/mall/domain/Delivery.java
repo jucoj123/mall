@@ -78,11 +78,11 @@ public class Delivery  {
 
     public static void updateStatus(Cookfinished cookfinished){
 
-        /** Example 1:  new item 
+        // Example 1:  new item 
         Delivery delivery = new Delivery();
         repository().save(delivery);
 
-        */
+        
 
         /** Example 2:  finding and process
         
@@ -99,11 +99,11 @@ public class Delivery  {
     }
     public static void addToOrderlist(Orderplaced orderplaced){
 
-        /** Example 1:  new item 
+        // Example 1:  new item 
         Delivery delivery = new Delivery();
         repository().save(delivery);
 
-        */
+        
 
         /** Example 2:  finding and process
         
