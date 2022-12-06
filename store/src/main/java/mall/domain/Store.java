@@ -92,6 +92,7 @@ public class Store  {
 
         //Example 1:  new item 
         Store store = new Store();
+        store.setOrderid(paid.getOrderid());
         repository().save(store);
 
         
@@ -113,6 +114,7 @@ public class Store  {
 
         // Example 1:  new item 
         Store store = new Store();
+        store.setOrderid(String.valueOf(orderplaced.getOrderid()));
         repository().save(store);
 
         

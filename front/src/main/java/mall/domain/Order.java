@@ -103,6 +103,7 @@ public class Order  {
 
         // Example 1:  new item 
         Order order = new Order();
+        order.setOrderid(Long.getLong(cookstarted.getOrderid()));
         repository().save(order);
 
         
@@ -124,6 +125,7 @@ public class Order  {
 
         // Example 1:  new item 
         Order order = new Order();
+        order.setOrderid(Long.getLong(rejected.getOrderid()));
         repository().save(order);
 
         

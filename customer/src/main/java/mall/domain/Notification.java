@@ -47,6 +47,7 @@ public class Notification  {
 
         // Example 1:  new item 
         Notification notification = new Notification();
+        notification.setCustomerid(accepted.getCustomerid());
         repository().save(notification);
 
         

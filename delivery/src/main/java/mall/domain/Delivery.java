@@ -80,6 +80,7 @@ public class Delivery  {
 
         // Example 1:  new item 
         Delivery delivery = new Delivery();
+        delivery.setOrderid(cookfinished.getOrderid());
         repository().save(delivery);
 
         
@@ -101,6 +102,7 @@ public class Delivery  {
 
         // Example 1:  new item 
         Delivery delivery = new Delivery();
+        delivery.setOrderid(String.valueOf(orderplaced.getOrderid()));
         repository().save(delivery);
 
         

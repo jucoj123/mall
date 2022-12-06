@@ -71,6 +71,7 @@ public class Pay  {
 
         // Example 1:  new item 
         Pay pay = new Pay();
+        pay.setOrderid(rejected.getOrderid());
         repository().save(pay);
 
         
@@ -92,6 +93,7 @@ public class Pay  {
 
         //Example 1:  new item 
         Pay pay = new Pay();
+        pay.setOrderid(String.valueOf(ordercanceled.getOrderid()));
         repository().save(pay);
 
         
