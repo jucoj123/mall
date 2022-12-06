@@ -45,11 +45,11 @@ public class Notification  {
 
     public static void notifyKakao(Accepted accepted){
 
-        /** Example 1:  new item 
+        // Example 1:  new item 
         Notification notification = new Notification();
         repository().save(notification);
 
-        */
+        
 
         /** Example 2:  finding and process
         
@@ -66,11 +66,11 @@ public class Notification  {
     }
     public static void notifyKakao(Rejected rejected){
 
-        /** Example 1:  new item 
+        // Example 1:  new item 
         Notification notification = new Notification();
         repository().save(notification);
 
-        */
+        
 
         /** Example 2:  finding and process
         
@@ -87,11 +87,11 @@ public class Notification  {
     }
     public static void notifyKakao(Cookstarted cookstarted){
 
-        /** Example 1:  new item 
+        // Example 1:  new item 
         Notification notification = new Notification();
         repository().save(notification);
 
-        */
+        
 
         /** Example 2:  finding and process
         
@@ -108,11 +108,11 @@ public class Notification  {
     }
     public static void notifyKakao(Cookfinished cookfinished){
 
-        /** Example 1:  new item 
+        // Example 1:  new item 
         Notification notification = new Notification();
         repository().save(notification);
 
-        */
+        
 
         /** Example 2:  finding and process
         
@@ -129,11 +129,11 @@ public class Notification  {
     }
     public static void notifyKakao(Picked picked){
 
-        /** Example 1:  new item 
+        // Example 1:  new item 
         Notification notification = new Notification();
         repository().save(notification);
 
-        */
+        
 
         /** Example 2:  finding and process
         
@@ -150,11 +150,11 @@ public class Notification  {
     }
     public static void notifyKakao(Deliverystarted deliverystarted){
 
-        /** Example 1:  new item 
+        // Example 1:  new item 
         Notification notification = new Notification();
         repository().save(notification);
 
-        */
+        
 
         /** Example 2:  finding and process
         
@@ -171,11 +171,11 @@ public class Notification  {
     }
     public static void notifyKakao(Orderplaced orderplaced){
 
-        /** Example 1:  new item 
+        // Example 1:  new item 
         Notification notification = new Notification();
         repository().save(notification);
 
-        */
+    
 
         /** Example 2:  finding and process
         
@@ -192,11 +192,11 @@ public class Notification  {
     }
     public static void notifyKakao(Ordercanceled ordercanceled){
 
-        /** Example 1:  new item 
+        // Example 1:  new item 
         Notification notification = new Notification();
         repository().save(notification);
 
-        */
+        
 
         /** Example 2:  finding and process
         
@@ -213,11 +213,11 @@ public class Notification  {
     }
     public static void notifyKakao(Paid paid){
 
-        /** Example 1:  new item 
+        // Example 1:  new item 
         Notification notification = new Notification();
         repository().save(notification);
 
-        */
+        
 
         /** Example 2:  finding and process
         
