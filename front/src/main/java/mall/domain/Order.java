@@ -64,8 +64,17 @@ public class Order  {
     public void onPostPersist(){
 
 
+        Orderplaced orderplaced = new Orderplaced(this);
+        orderplaced.publishAfterCommit();
+
         Ordercanceled ordercanceled = new Ordercanceled(this);
         ordercanceled.publishAfterCommit();
+
+        mall.external.Pay pay = new mall.external.Pay();
+        // mappings goes here
+        FrontApplication.applicationContext.getBean(mall.external.PayService.class)
+            .pay(pay);
+
 
         // Get request from Pay
         //mall.external.Pay pay =
@@ -79,15 +88,6 @@ public class Order  {
         //Following code causes dependency to external APIs
         // it is NOT A GOOD PRACTICE. instead, Event-Policy mapping is recommended.
 
-
-        mall.external.Pay pay = new mall.external.Pay();
-        // mappings goes here
-        FrontApplication.applicationContext.getBean(mall.external.PayService.class)
-            .pay(pay);
-
-
-        Orderplaced orderplaced = new Orderplaced(this);
-        orderplaced.publishAfterCommit();
 
     }
 
